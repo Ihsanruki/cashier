@@ -1,4 +1,4 @@
-package com.smk.cashier.Model;
+package com.smk.cashier.model;
 
 import java.util.Date;
 

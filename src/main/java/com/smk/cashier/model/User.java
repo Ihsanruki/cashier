@@ -1,4 +1,4 @@
-package com.smk.cashier.Model;
+package com.smk.cashier.model;
 
 public class User extends Model{
     private String userName;
