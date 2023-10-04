@@ -39,4 +39,5 @@ public abstract class Model {
     public void setUpdateBy(Date updateBy) {
         this.updateBy = updateBy;
     }
+
 }
