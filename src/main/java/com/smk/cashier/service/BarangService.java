@@ -2,6 +2,7 @@ package com.smk.cashier.service;
 
 import com.smk.cashier.model.Barang;
 
+
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,8 +11,7 @@ import java.util.StringTokenizer;
 public class BarangService {
     FileReader barangServiceReader;
     FileWriter barangServiceWriter;
-    List<Barang> barangList =
-            new LinkedList<>();
+    List<Barang> barangList = new LinkedList<>();
     private static BarangService
             barangService=null;
     private BarangService() {
@@ -93,7 +93,7 @@ public class BarangService {
         barangList.add(barang);
         writeFile();
     }
-    public List<Barang> findByName (String name) {
+    public List<Barang> findbyname (String name) {
         List<Barang> resultList = barangList.stream().filter(barang -> barang.getNamaBarang().startsWith(name)).toList();
         return resultList;
     }
